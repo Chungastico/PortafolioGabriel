@@ -1,3 +1,6 @@
+@import '@fontsource/bebas-neue';
+@import '@fontsource/space-grotesk';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

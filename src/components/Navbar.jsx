@@ -1,18 +1,15 @@
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
     return (
-        <nav className="bg-blue-600 text-white p-4 shadow-md">
-            <div className="container mx-auto flex justify-between items-center">
-                <h1 className="text-xl font-bold">Mi Portafolio</h1>
-                <ul className="flex space-x-4">
-                <li>
-                    <Link to="/" className="hover:underline">Inicio</Link>
-                </li>
-                <li>
-                    <Link to="/AboutUs" className="hover:underline">Contáctanos</Link>
-                </li>
-                </ul>
+        <nav className="bg-celeste p-4 flex justify-between items-center">
+            <div className="text-azulNavy text-2xl font-bold">LOGO</div>
+            <div className="flex space-x-6 text-azulNavy text-lg">
+                <Link to="/">Inicio</Link>
+                <Link to="/sobre-mi">Sobre Mí</Link>
+                <Link to="/proyectos">Proyectos</Link>
+                <Link to="/contacto">Contacto</Link>
             </div>
         </nav>
     );

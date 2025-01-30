@@ -1,18 +1,23 @@
-import { motion } from 'framer-motion';
+import React from "react";
 
 const HeroHome = () => {
     return (
-        <motion.section
-        className="bg-blue-500 text-white p-8 text-center"
-        initial={{ opacity: 0, y: -50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
+        <section
+            className="bg-celeste flex flex-col items-center justify-start text-center p-6"
+            style={{
+                backgroundImage: "url('/assets/images/EdificiosRojo.png')",
+                backgroundSize: "contain",
+                backgroundPosition: "bottom",
+                backgroundRepeat: "no-repeat",
+                height: "120vh", // Para pantallas grandes
+            }}
         >
-        <h1 className="text-4xl font-bold mb-4">¡Bienvenido a mi Portafolio!</h1>
-        <p className="text-lg">Soy Gabriel, desarrollador apasionado por crear experiencias únicas en la web.</p>
-        </motion.section>
+            <div className="text-center sm:mt-0 mt-2"> {/* Ajustamos el margen superior en pantallas pequeñas */}
+                <h1 className="text-azulNavy font-bebas-neue text-5xl md:text-7xl">¿ESTÁS LISTO PARA</h1>
+                <h2 className="text-rojoFuerte font-bebas-neue text-5xl md:text-7xl">CONSTRUIR TU FUTURO?</h2>
+            </div>
+        </section>
     );
 };
 
 export default HeroHome;
-
